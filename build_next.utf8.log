@@ -1,0 +1,393 @@
+﻿??Next.js 16.2.1 (Turbopack)
+
+  Creating an optimized production build ...
+node.exe : 
+位於 線路:1 字元:1
++ & "C:\Program File
+s\nodejs/node.exe" "
+C:\Program Files\nod
+ejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (:Str   
+ ing) [], Remote    
+Exception
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+> Build error occurr
+ed
+Error: Turbopack bui
+ld failed with 6 err
+ors:
+./src/app/(public)/m
+e/page.tsx:5:20
+You're importing a m
+odule that depends o
+n `useEffect` into a
+ React Server Compon
+ent module. This API
+ is only available i
+n Client Components.
+ To fix, mark the fi
+le (or its parent) w
+ith the `"use client
+"` directive.
+    Learn more: http
+s://nextjs.org/docs/
+app/api-reference/di
+rectives/use-client
+  [90m3 |[0m [36m
+import[0m { useAppS
+tore } [36mfrom[0m
+ [32m"@/lib/store"
+[0m;
+  [90m4 |[0m [36m
+import[0m { useRout
+er } [36mfrom[0m 
+[32m"next/navigation
+"[0m;
+[31m[1m>[0m [90m
+5 |[0m [36mimport
+[0m { useState, useE
+ffect } [36mfrom[0
+m [32m"react"[0m;
+  [90m  |[0m      
+              [31m
+[1m^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36m
+export[0m [36mdefa
+ult[0m [36mfunctio
+n[0m [33mMePage[0
+m() {
+  [90m8 |[0m   [3
+6mconst[0m { curren
+tUser, clearState } 
+= useAppStore();
+
+Ecmascript file had 
+an error
+
+
+./src/app/(public)/m
+e/page.tsx:4:10
+You're importing a m
+odule that depends o
+n `useRouter` into a
+ React Server Compon
+ent module. This API
+ is only available i
+n Client Components.
+ To fix, mark the fi
+le (or its parent) w
+ith the `"use client
+"` directive.
+    Learn more: http
+s://nextjs.org/docs/
+app/api-reference/di
+rectives/use-client
+  [90m2 |[0m [36m
+import[0m { [33mUs
+er[0m, [33mShield
+[0m, [33mLogOut[0m
+ } [36mfrom[0m [3
+2m"lucide-react"[0m
+;
+  [90m3 |[0m [36m
+import[0m { useAppS
+tore } [36mfrom[0m
+ [32m"@/lib/store"
+[0m;
+[31m[1m>[0m [90m
+4 |[0m [36mimport
+[0m { useRouter } [
+36mfrom[0m [32m"ne
+xt/navigation"[0m;
+  [90m  |[0m      
+    [31m[1m^^^^^^^
+^^[0m
+  [90m5 |[0m [36m
+import[0m { useStat
+e, useEffect } [36m
+from[0m [32m"react
+"[0m;
+  [90m6 |[0m
+  [90m7 |[0m [36m
+export[0m [36mdefa
+ult[0m [36mfunctio
+n[0m [33mMePage[0
+m() {
+
+Ecmascript file had 
+an error
+
+
+./src/app/(public)/m
+e/page.tsx:5:10
+You're importing a m
+odule that depends o
+n `useState` into a 
+React Server Compone
+nt module. This API 
+is only available in
+ Client Components. 
+To fix, mark the fil
+e (or its parent) wi
+th the `"use client"
+` directive.
+    Learn more: http
+s://nextjs.org/docs/
+app/api-reference/di
+rectives/use-client
+  [90m3 |[0m [36m
+import[0m { useAppS
+tore } [36mfrom[0m
+ [32m"@/lib/store"
+[0m;
+  [90m4 |[0m [36m
+import[0m { useRout
+er } [36mfrom[0m 
+[32m"next/navigation
+"[0m;
+[31m[1m>[0m [90m
+5 |[0m [36mimport
+[0m { useState, useE
+ffect } [36mfrom[0
+m [32m"react"[0m;
+  [90m  |[0m      
+    [31m[1m^^^^^^^
+^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36m
+export[0m [36mdefa
+ult[0m [36mfunctio
+n[0m [33mMePage[0
+m() {
+  [90m8 |[0m   [3
+6mconst[0m { curren
+tUser, clearState } 
+= useAppStore();
+
+Ecmascript file had 
+an error
+
+
+./src/app/(public)/m
+e/page.tsx:2:1
+Module not found: Ca
+n't resolve 'lucide-
+react'
+  [90m1 |[0m [36m
+import[0m [33mLink
+[0m [36mfrom[0m 
+[32m"next/link"[0m;
+[31m[1m>[0m [90m
+2 |[0m [36mimport
+[0m { [33mUser[0m,
+ [33mShield[0m, [
+33mLogOut[0m } [36
+mfrom[0m [32m"luci
+de-react"[0m;
+  [90m  |[0m [31m
+[1m^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m [36m
+import[0m { useAppS
+tore } [36mfrom[0m
+ [32m"@/lib/store"
+[0m;
+  [90m4 |[0m [36m
+import[0m { useRout
+er } [36mfrom[0m 
+[32m"next/navigation
+"[0m;
+  [90m5 |[0m [36m
+import[0m { useStat
+e, useEffect } [36m
+from[0m [32m"react
+"[0m;
+
+
+
+https://nextjs.org/d
+ocs/messages/module-
+not-found
+
+
+./src/app/(staff)/st
+aff/dashboard/page.t
+sx:5:1
+Module not found: Ca
+n't resolve 'lucide-
+react'
+  [90m3 |[0m [36m
+import[0m { [33mSt
+affGuard[0m } [36m
+from[0m [32m'@/com
+ponents/guards/Staff
+Guard'[0m;
+  [90m4 |[0m [36m
+import[0m { useAppS
+tore } [36mfrom[0m
+ [32m'@/lib/store'
+[0m;
+[31m[1m>[0m [90m
+5 |[0m [36mimport
+[0m { [33mUsers[0m
+, [33mMail[0m, [3
+3mCheckCircle2[0m, 
+[33mLogOut[0m } [
+36mfrom[0m [32m'lu
+cide-react'[0m;
+  [90m  |[0m [31m
+[1m^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^[0m
+  [90m6 |[0m [36m
+import[0m { useRout
+er } [36mfrom[0m 
+[32m'next/navigation
+'[0m;
+  [90m7 |[0m
+  [90m8 |[0m [36m
+export[0m [36mdefa
+ult[0m [36mfunctio
+n[0m [33mStaffDash
+boardPage[0m() {
+
+
+
+Import traces:
+  Client Component B
+rowser:
+    ./src/app/(staff
+)/staff/dashboard/pa
+ge.tsx [Client Compo
+nent Browser]
+    ./src/app/(staff
+)/staff/dashboard/pa
+ge.tsx [Server Compo
+nent]
+
+  Client Component S
+SR:
+    ./src/app/(staff
+)/staff/dashboard/pa
+ge.tsx [Client Compo
+nent SSR]
+    ./src/app/(staff
+)/staff/dashboard/pa
+ge.tsx [Server Compo
+nent]
+
+https://nextjs.org/d
+ocs/messages/module-
+not-found
+
+
+./src/app/(staff)/st
+aff/login/page.tsx:6
+:1
+Module not found: Ca
+n't resolve 'lucide-
+react'
+  [90m4 |[0m [36m
+import[0m { useRout
+er } [36mfrom[0m 
+[32m'next/navigation
+'[0m;
+  [90m5 |[0m [36m
+import[0m { useAppS
+tore } [36mfrom[0m
+ [32m'@/lib/store'
+[0m;
+[31m[1m>[0m [90m
+6 |[0m [36mimport
+[0m { [33mLock[0m 
+} [36mfrom[0m [32
+m'lucide-react'[0m;
+  [90m  |[0m [31m
+[1m^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m7 |[0m
+  [90m8 |[0m [36m
+export[0m [36mdefa
+ult[0m [36mfunctio
+n[0m [33mStaffLogi
+nPage[0m() {
+  [90m9 |[0m   [3
+6mconst[0m [passwor
+d, setPassword] = us
+eState([32m''[0m);
+
+
+
+Import traces:
+  Client Component B
+rowser:
+    ./src/app/(staff
+)/staff/login/page.t
+sx [Client Component
+ Browser]
+    ./src/app/(staff
+)/staff/login/page.t
+sx [Server Component
+]
+
+  Client Component S
+SR:
+    ./src/app/(staff
+)/staff/login/page.t
+sx [Client Component
+ SSR]
+    ./src/app/(staff
+)/staff/login/page.t
+sx [Server Component
+]
+
+https://nextjs.org/d
+ocs/messages/module-
+not-found
+
+
+    at <unknown> (./
+src/app/(public)/me/
+page.tsx:5:20)
+    at <unknown> (./
+src/app/(public)/me/
+page.tsx:4:10)
+    at <unknown> (./
+src/app/(public)/me/
+page.tsx:5:10)
+    at <unknown> (./
+src/app/(public)/me/
+page.tsx:2:1)
+    at <unknown> (ht
+tps://nextjs.org/doc
+s/messages/module-no
+t-found)
+    at <unknown> (./
+src/app/(staff)/staf
+f/dashboard/page.tsx
+:5:1)
+    at <unknown> (ht
+tps://nextjs.org/doc
+s/messages/module-no
+t-found)
+    at <unknown> (./
+src/app/(staff)/staf
+f/login/page.tsx:6:1
+)
+    at <unknown> (ht
+tps://nextjs.org/doc
+s/messages/module-no
+t-found)
