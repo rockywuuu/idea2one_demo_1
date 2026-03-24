@@ -6,7 +6,6 @@ import { useAppStore } from '@/lib/store';
 import { mockUsers, User } from '@/mocks/users';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { BottomNav } from '@/components/nav/BottomNav';
 
 type Tab = 'received' | 'sent';
 
@@ -183,7 +182,6 @@ export default function InboxPage() {
         )}
       </div>
 
-      <BottomNav />
     </div>
   );
 }

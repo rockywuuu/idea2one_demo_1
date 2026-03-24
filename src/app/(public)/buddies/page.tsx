@@ -6,7 +6,6 @@ import { useAppStore } from '@/lib/store';
 import { mockUsers, User } from '@/mocks/users';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
-import { BottomNav } from '@/components/nav/BottomNav';
 
 export default function BuddiesPage() {
   const router = useRouter();
@@ -121,7 +120,6 @@ export default function BuddiesPage() {
         )}
       </div>
 
-      <BottomNav />
     </div>
   );
 }
