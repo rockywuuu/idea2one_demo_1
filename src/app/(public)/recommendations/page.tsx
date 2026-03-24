@@ -34,14 +34,16 @@ export default function RecommendationsPage() {
                        quizResult.preferredCategory === 'cocktail' ? '調酒' : '葡萄酒';
 
   return (
-    <div className="p-4 pt-8 pb-32 space-y-6">
-      <header className="space-y-2">
+    <div className="min-h-screen bg-gray-50 pb-24 flex flex-col h-full">
+      <div className="bg-white px-4 py-8 shadow-sm mb-4">
         <h1 className="text-2xl font-bold">為您推薦的 Top 3</h1>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-gray-600 dark:text-gray-400 mt-2">
           根據測驗結果，您的偏好傾向於 <span className="font-bold text-indigo-600 dark:text-indigo-400">{categoryName}</span>。
           以下是為您精選的酒款：
         </p>
-      </header>
+      </div>
+
+      <div className="px-4 space-y-4 flex-1">
 
       <div className="space-y-4">
         {recommendations.map((beverage) => (
@@ -82,6 +84,7 @@ export default function RecommendationsPage() {
         <Button variant="outline" className="w-full" onClick={() => router.push('/quiz')}>
           重新測驗
         </Button>
+      </div>
       </div>
     </div>
   );

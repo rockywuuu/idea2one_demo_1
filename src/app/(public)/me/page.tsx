@@ -26,7 +26,7 @@ export default function MePage() {
 
   return (
     <div className="flex flex-col min-h-full pb-20">
-      <div className="bg-white p-6 shadow-sm mb-4">
+      <div className="bg-white px-4 py-6 shadow-sm mb-4">
         <h1 className="text-2xl font-bold mb-6 flex items-center gap-2">
           👤 我的主頁
         </h1>
@@ -42,15 +42,15 @@ export default function MePage() {
         </div>
       </div>
 
-      <div className="flex-1 py-2 flex flex-col gap-2">
-        <div className="bg-white p-4 shadow-sm border-y border-gray-100 space-y-3">
+      <div className="px-4 py-4 space-y-4 flex-1">
+        <div className="bg-white p-4 rounded-xl shadow-sm space-y-3">
           <h3 className="font-bold border-b pb-2">偏好摘要</h3>
           <p className="text-sm"><span className="text-gray-500 w-24 inline-block">喜歡的酒類：</span>{currentUser.preferred_categories.join(', ')}</p>
           <p className="text-sm"><span className="text-gray-500 w-24 inline-block">可接受烈度：</span>{currentUser.abv_tolerance === 'low' ? '低' : currentUser.abv_tolerance === 'medium' ? '中' : '高'}</p>
           <p className="text-sm"><span className="text-gray-500 w-24 inline-block">今晚狀態：</span>{currentUser.availability_tonight === 'available' ? '想找人喝' : currentUser.availability_tonight === 'maybe' ? '只想自己喝但想找酒' : '不確定'}</p>
         </div>
 
-        <div className="bg-white shadow-sm border-y border-gray-100 overflow-hidden">
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
           <Link href="/safety" className="flex items-center gap-3 p-4 hover:bg-gray-50 transition-colors border-b">
             <span className="text-xl">🛡️</span>
             <span className="flex-1 font-medium">安全提醒與社群規範</span>

@@ -37,13 +37,13 @@ export default function BuddiesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
-      <div className="bg-white px-6 py-4 shadow-sm sticky top-0 z-10">
+      <div className="bg-white px-4 py-4 shadow-sm sticky top-0 z-10">
         <h1 className="text-xl font-bold text-gray-900">附近酒友</h1>
       </div>
 
-      <div className="py-2 space-y-2">
+      <div className="px-4 py-4 space-y-4">
         {locationPermission === 'prompt' && (
-          <Card className="rounded-none border-x-0 border-indigo-100 bg-indigo-50 mb-6">
+          <Card className="border-indigo-100 bg-indigo-50 mb-6">
             <h2 className="font-semibold text-indigo-900 mb-2">允許存取位置資訊？</h2>
             <p className="text-sm text-indigo-700 mb-4">
               我們需要位置資訊來顯示您與附近酒友的距離。
@@ -72,7 +72,7 @@ export default function BuddiesPage() {
             目前附近沒有其他酒友
           </div>
         ) : (
-          <div className="flex flex-col gap-2">
+          <div className="grid gap-4">
             {otherBuddies.map(buddy => {
               const distance = locationPermission === 'granted' 
                 ? `${buddy.location_mock.distance_to_me_km} km` 
@@ -94,7 +94,7 @@ export default function BuddiesPage() {
               return (
                 <Card 
                   key={buddy.user_id} 
-                  className="rounded-none border-x-0 cursor-pointer hover:border-indigo-300 transition-colors"
+                  className="p-4 cursor-pointer hover:border-indigo-300 transition-colors"
                   onClick={() => router.push(`/buddies/${buddy.user_id}`)}
                 >
                   <div className="flex items-center space-x-4">

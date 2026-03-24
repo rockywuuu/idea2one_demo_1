@@ -10,11 +10,13 @@ export default function DiscoverPage() {
   const { currentUser, quizResult } = useAppStore();
 
   return (
-    <div className="p-4 pt-8 pb-32 space-y-6">
-      <header className="space-y-1">
+    <div className="min-h-screen bg-gray-50 pb-24 flex flex-col h-full">
+      <div className="bg-white px-4 py-6 shadow-sm mb-4">
         <h1 className="text-2xl font-bold">哈囉，{currentUser?.nickname || '酒友'}！</h1>
         <p className="text-gray-500 text-sm">今晚想來點什麼？</p>
-      </header>
+      </div>
+
+      <div className="px-4 space-y-6 flex-1">
 
       <section className="space-y-4">
         <h2 className="text-lg font-semibold">找酒組合</h2>
@@ -76,5 +78,6 @@ export default function DiscoverPage() {
         </Card>
       </section>
     </div>
+  </div>
   );
 }

@@ -74,7 +74,7 @@ export default function InboxPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 pb-24">
-      <div className="bg-white px-6 py-4 shadow-sm sticky top-0 z-10">
+      <div className="bg-white px-4 py-4 shadow-sm sticky top-0 z-10">
         <h1 className="text-xl font-bold text-gray-900 text-center">邀請匣</h1>
       </div>
 
@@ -100,7 +100,7 @@ export default function InboxPage() {
         </div>
       </div>
 
-      <div className="py-2 flex flex-col gap-2">
+      <div className="px-4 space-y-4">
         {currentList.length === 0 ? (
           <div className="text-center py-10 text-gray-500">
             目前沒有{activeTab === 'received' ? '收到' : '送出'}的邀請
@@ -113,7 +113,7 @@ export default function InboxPage() {
             if (!targetUser) return null; // Safe guard
 
             return (
-              <Card key={invite.invite_id} className="p-4 rounded-none border-x-0">
+              <Card key={invite.invite_id} className="p-4">
                 <div 
                   className="flex items-center space-x-4 mb-4 cursor-pointer"
                   onClick={() => router.push(`/buddies/${targetUser.user_id}`)}

@@ -46,15 +46,13 @@ export default function BeveragesPage() {
   };
 
   return (
-    <div className="p-4 pt-8 pb-32 space-y-6 flex flex-col h-full min-h-screen">
-      <header className="space-y-4">
-        <div>
-          <h1 className="text-2xl font-bold">酒款庫</h1>
-          <p className="text-sm text-gray-500">探索豐富的精釀啤酒、調酒與葡萄酒</p>
-        </div>
-
-        {/* Tabs */}
-        <div className="flex p-1 bg-gray-100 dark:bg-gray-800 rounded-lg">
+    <div className="min-h-screen bg-gray-50 pb-24 flex flex-col h-full">
+      <div className="bg-white px-4 py-8 shadow-sm mb-4">
+        <h1 className="text-2xl font-bold">酒款庫</h1>
+        <p className="text-sm text-gray-500">探索豐富的精釀啤酒、調酒與葡萄酒</p>
+        
+        {/* Tabs - Moved into header for better spacing */}
+        <div className="mt-4 flex p-1 bg-gray-100 dark:bg-gray-800 rounded-lg">
           {(['beer', 'cocktail', 'wine'] as BeverageCategory[]).map(tab => (
             <button
               key={tab}
@@ -70,7 +68,7 @@ export default function BeveragesPage() {
           ))}
         </div>
 
-        <div className="flex gap-2">
+        <div className="mt-2 flex gap-2">
           <Select 
             value={abvFilter} 
             onChange={(e) => setAbvFilter(e.target.value as AbvFilter)}
@@ -93,9 +91,9 @@ export default function BeveragesPage() {
             ]}
           />
         </div>
-      </header>
+      </div>
 
-      <div className="flex-1 space-y-4">
+      <div className="px-4 space-y-4 pt-4 flex-1">
         <p className="text-sm text-gray-500">找到 {filteredBeverages.length} 款酒</p>
         
         {filteredBeverages.length === 0 ? (

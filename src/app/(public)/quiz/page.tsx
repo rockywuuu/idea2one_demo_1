@@ -89,7 +89,7 @@ export default function QuizPage() {
   }
 
   return (
-    <div className="p-4 pt-8 pb-32 max-w-md mx-auto h-full flex flex-col">
+    <div className="px-4 py-8 pb-32 h-full flex flex-col">
       <div className="mb-8">
         <div className="flex justify-between text-sm text-gray-500 mb-2">
           <span>題目 {currentStep + 1} / {mockQuizQuestions.length}</span>
